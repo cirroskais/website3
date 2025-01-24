@@ -1,3 +1,38 @@
 @import 'tailwindcss/base';
 @import 'tailwindcss/components';
 @import 'tailwindcss/utilities';
+
+@font-face {
+	font-family: 'SN Pro';
+	src: url('https://cdn.cirroskais.xyz/fonts/SNPro/SNPro-Regular.woff2');
+	font-weight: 200;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'SN Pro';
+	src: url('https://cdn.cirroskais.xyz/fonts/SNPro/SNPro-Bold.woff2');
+	font-weight: 900;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'SN Pro';
+	src: url('https://cdn.cirroskais.xyz/fonts/SNPro/SNPro-RegularItalic.woff2');
+	font-weight: 200;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'SN Pro';
+	src: url('https://cdn.cirroskais.xyz/fonts/SNPro/SNPro-BoldItalic.woff2');
+	font-weight: 900;
+	font-style: italic;
+}
+
+html,
+body {
+	@apply text-gray-400;
+	background-image: url('./lib/img/cbimage.png');
+	font-family: 'SN Pro', sans-serif;
+}
