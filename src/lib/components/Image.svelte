@@ -15,7 +15,10 @@
 	});
 </script>
 
-<div class={' rounded-sm bg-neutral-600/20'}>
+<div
+	class={'rounded-lg bg-neutral-600/20'}
+	style="width: {props.width}px; height: {props.height}px;"
+>
 	{#if loaded}
 		<img
 			in:scale
