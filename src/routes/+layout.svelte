@@ -15,6 +15,7 @@
 	<meta name="theme-color" content="#c4bef3" />
 	<link rel="me" href="https://libre.fm/user/cirrosneppy" />
 	<link rel="me" href="https://fedi.minecraft-sex.porn/cirro" />
+	<link rel="me" href="https://github.com/cirroskais" />
 </svelte:head>
 
 {@render children()}
