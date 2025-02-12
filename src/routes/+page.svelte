@@ -10,7 +10,7 @@
 		<div class="flex gap-2">
 			<Image height={75} width={75} src="/api/avatar"></Image>
 			<div class=" my-auto grid h-min">
-				<h1 class="text-cirro items-center text-2xl font-bold leading-6">
+				<h1 class="items-center text-2xl font-bold leading-6 text-cirro">
 					{data.discord.username}
 				</h1>
 				<p class="leading-5">(he/they) snow leopard programmer thing</p>
@@ -20,14 +20,14 @@
 
 	<div>
 		<p>
-			Hi there, and welcome to my website! My name is <span class="text-cirro font-black"
+			Hi there, and welcome to my website! My name is <span class="font-black text-cirro"
 				>cirro</span
-			>! I'm 18 years old, I like programming, I'm a Linux enthusiast, and I'm an amatuer sysadmin.
+			>! I'm 18 years old, I like programming, I'm a Linux enthusiast, and I'm an amateur sysadmin.
 			I don't really have that much of an online presence, but I am on Discord. If you would like to
 			message me, send a friend request to
-			<span class="text-cirro font-black">@{data.discord.username}</span>. My requests aren't always
+			<span class="font-black text-cirro">@{data.discord.username}</span>. My requests aren't always
 			open, so if that fails, then you can send me an Email at
-			<span class="text-cirro font-black">cirro[at]snep.lol</span>.
+			<span class="font-black text-cirro">cirro[at]snep.lol</span>.
 		</p>
 	</div>
 
