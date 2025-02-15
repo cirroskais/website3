@@ -1,24 +1,56 @@
 <script lang="ts">
 	import Button8831 from '$lib/components/8831.svelte';
 	import Image from '$lib/components/Image.svelte';
+	import SocialLink from '$lib/components/SocialLink.svelte';
+
+	import Librefm from '$lib/img/icons/librefm.png';
+	import Fediverse from '$lib/img/icons/fediverse.png';
+	import Github from '$lib/img/icons/github.svg';
+	import Lastfm from '$lib/img/icons/lastfm.png';
 
 	let { data } = $props();
 </script>
 
-<div class="m-auto mt-72 grid size-fit max-w-xl gap-2">
+<div class="m-auto mt-40 grid size-fit max-w-xl gap-2 md:mt-72">
 	<div class="w-fit">
 		<div class="flex gap-2">
 			<Image height={75} width={75} src="/api/avatar"></Image>
-			<div class=" my-auto grid h-min">
+			<div class="my-auto grid h-min gap-0.5">
 				<h1 class="items-center text-2xl font-bold leading-6 text-cirro">
 					{data.discord.username}
 				</h1>
-				<p class="leading-5">(he/they) snow leopard programmer thing</p>
+				<p class="leading-5">snow leopard programmer thing</p>
+				<div class="flex gap-1">
+					<SocialLink
+						href="https://libre.fm/user/cirrosneppy"
+						src={Librefm}
+						rel="me"
+						alt="libre.fm logo"
+					></SocialLink>
+					<SocialLink
+						href="https://fedi.minecraft-sex.porn/cirro"
+						src={Fediverse}
+						rel="me"
+						alt={'"fediverse" logo'}
+					></SocialLink>
+					<SocialLink
+						href="https://github.com/cirroskais"
+						src={Github}
+						rel="me"
+						alt="github.com logo"
+					></SocialLink>
+					<SocialLink
+						href="https://www.last.fm/user/RAAAAAAAAAAAH"
+						src={Lastfm}
+						rel="me"
+						alt="last.fm logo"
+					></SocialLink>
+				</div>
 			</div>
 		</div>
 	</div>
 
-	<div>
+	<div class="-mt-0.5">
 		<p>
 			Hi there, and welcome to my website! My name is <span class="font-black text-cirro"
 				>cirro</span
@@ -31,7 +63,7 @@
 		</p>
 	</div>
 
-	<div class="grid size-fit grid-cols-6 gap-2.5">
+	<div class="flex w-fit flex-wrap gap-2">
 		<Button8831 src={{ default: './img/buttons/cirro.png' }} href="https://cirroskais.xyz"
 		></Button8831>
 		<Button8831 src={import("$lib/img/buttons/robin.png")} href="https://x.com/Porpss1"
@@ -41,9 +73,9 @@
 			src={import("$lib/img/buttons/firefox.gif")}
 			href="https://www.mozilla.org/en-US/firefox/new"
 		></Button8831>
-		<Button8831 src={import("$lib/img/buttons/micro.png")} href="https://m1cro.xyz"></Button8831>
-		<Button8831 src={import("$lib/img/buttons/osaka.png")} href="https://azumanga.xyz/"
+		<Button8831 src={import("$lib/img/buttons/indieweb.gif")} href="https://indieweb.org"
 		></Button8831>
+		<Button8831 src={import("$lib/img/buttons/micro.png")} href="https://m1cro.xyz"></Button8831>
 		<Button8831 src={import("$lib/img/buttons/percocet.png")} href="https://percocet.monster"
 		></Button8831>
 		<Button8831 src={import("$lib/img/buttons/snowleopards.png")}></Button8831>
