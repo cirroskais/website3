@@ -34,6 +34,6 @@ html,
 body {
 	@apply text-gray-400;
 	background-color: #212121;
-	background-image: url('./lib/img/cbimage.png');
+	background-image: url('$lib/img/carbon.webp');
 	font-family: 'SN Pro', sans-serif;
 }

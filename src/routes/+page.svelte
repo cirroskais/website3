@@ -59,7 +59,9 @@
 			message me, send a friend request to
 			<span class="font-black text-cirro">@{data.discord.username}</span>. My requests aren't always
 			open, so if that fails, then you can send me an Email at
-			<span class="font-black text-cirro">cirro[at]snep.lol</span>.
+			<span class="font-black text-cirro">cirro[at]snep.lol</span>. If you would like to add my
+			button to your site, please link the button and do not rehost the image. If you let me know
+			that you've added my button, I'll add yours!
 		</p>
 	</div>
 
