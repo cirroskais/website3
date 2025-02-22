@@ -20,6 +20,13 @@
 	style="width: {props.width}px; height: {props.height}px;"
 >
 	{#if loaded}
-		<img in:scale class={'z-10 rounded-lg'} src={loaded} alt="" />
+		<img
+			in:scale
+			class={'z-10 rounded-lg'}
+			src={loaded}
+			alt=""
+			width={props.width}
+			height={props.height}
+		/>
 	{/if}
 </div>
