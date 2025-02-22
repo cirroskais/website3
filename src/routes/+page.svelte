@@ -3,10 +3,22 @@
 	import Image from '$lib/components/Image.svelte';
 	import SocialLink from '$lib/components/SocialLink.svelte';
 
-	import Librefm from '$lib/img/icons/librefm.png';
-	import Fediverse from '$lib/img/icons/fediverse.png';
+	import Librefm from '$lib/img/icons/librefm.png?enhanced';
+	import Fediverse from '$lib/img/icons/fediverse.png?enhanced';
 	import Github from '$lib/img/icons/github.svg';
-	import Lastfm from '$lib/img/icons/lastfm.png';
+	import Lastfm from '$lib/img/icons/lastfm.png?enhanced';
+
+	import Robin from '$lib/img/buttons/robin.png?enhanced';
+	import dfuser from '$lib/img/buttons/bcd.png?enhanced';
+	import Firefox from '$lib/img/buttons/firefox.gif?enhanced';
+	import IndieWeb from '$lib/img/buttons/indieweb.gif?enhanced';
+	import micro from '$lib/img/buttons/micro.png?enhanced';
+	import percocet from '$lib/img/buttons/percocet.png?enhanced';
+	import SnowLeopards from '$lib/img/buttons/snowleopards.png?enhanced';
+	import split from '$lib/img/buttons/split.png?enhanced';
+	import Stitch from '$lib/img/buttons/stitch.png?enhanced';
+	import TwoPaws from '$lib/img/buttons/twopaws.png?enhanced';
+	import veast from '$lib/img/buttons/veast.png?enhanced';
 
 	let { data } = $props();
 </script>
@@ -66,25 +78,17 @@
 	</div>
 
 	<div class="flex w-fit flex-wrap gap-2">
-		<Button8831 src={{ default: './img/buttons/cirro.png' }} href="https://cirroskais.xyz"
-		></Button8831>
-		<Button8831 src={import("$lib/img/buttons/robin.png")} href="https://x.com/Porpss1"
-		></Button8831>
-		<Button8831 src={import("$lib/img/buttons/bcd.png")} href="https://dfuser.xyz"></Button8831>
-		<Button8831
-			src={import("$lib/img/buttons/firefox.gif")}
-			href="https://www.mozilla.org/en-US/firefox/new"
-		></Button8831>
-		<Button8831 src={import("$lib/img/buttons/indieweb.gif")} href="https://indieweb.org"
-		></Button8831>
-		<Button8831 src={import("$lib/img/buttons/micro.png")} href="https://m1cro.xyz"></Button8831>
-		<Button8831 src={import("$lib/img/buttons/percocet.png")} href="https://percocet.monster"
-		></Button8831>
-		<Button8831 src={import("$lib/img/buttons/snowleopards.png")}></Button8831>
-		<Button8831 src={import("$lib/img/buttons/split.png")} href="https://split.pet"></Button8831>
-		<Button8831 src={import("$lib/img/buttons/stitch.png")} href="https://liloandstit.ch"
-		></Button8831>
-		<Button8831 src={import("$lib/img/buttons/twopaws.png")}></Button8831>
-		<Button8831 src={import("$lib/img/buttons/veast.png")} href="https://vea.st"></Button8831>
+		<Button8831 src={'./img/buttons/cirro.png'} href="https://cirroskais.xyz"></Button8831>
+		<Button8831 src={Robin} href="https://x.com/Porpss1"></Button8831>
+		<Button8831 src={dfuser} href="https://dfuser.xyz"></Button8831>
+		<Button8831 src={Firefox} href="https://www.mozilla.org/en-US/firefox/new"></Button8831>
+		<Button8831 src={IndieWeb} href="https://indieweb.org"></Button8831>
+		<Button8831 src={micro} href="https://m1cro.xyz"></Button8831>
+		<Button8831 src={percocet} href="https://percocet.monster"></Button8831>
+		<Button8831 src={SnowLeopards}></Button8831>
+		<Button8831 src={split} href="https://split.pet"></Button8831>
+		<Button8831 src={Stitch} href="https://liloandstit.ch"></Button8831>
+		<Button8831 src={TwoPaws}></Button8831>
+		<Button8831 src={veast} href="https://vea.st"></Button8831>
 	</div>
 </div>
